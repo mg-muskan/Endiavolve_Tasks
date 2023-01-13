@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap live Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Personal Css -->
+    <link rel="stylesheet" href="style-analytics.css">
+    <!-- Project already present Css -->
+    <!-- <link rel="stylesheet" href="indexcss.css"> -->
+    <!-- Roboto Condensed Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <section class="user-panel">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 50px">
+
+                <strong class="col-md-12 fs-4 text-center border-bottom">Analytics</strong>
+
+                <!-- Videos -->
+                <div class="col-md-4">
+                    <div class="graphbox">
+                        <span class="fs-5 fw-semibold p-3 border">Videos</span>
+                        <div class="list-group list-group-flush border-bottom scrollarea">
+                            <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm v1" value="video1" aria-labelledby="video1">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1" name="v1" value="1" id="strong">Video 1</strong>
+                                    <!-- <small>Wed</small> -->
+                                </div>
+                                <!-- <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div> -->
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm v2" value="video2" aria-labelledby="video2">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1" value="2" id="strong">Video 2</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" value="video3" aria-labelledby="video3">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 3</strong>
+                                </div>
+                            </a>
+
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" value="video4" aria-labelledby="video4">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 4</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 5</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 6</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 7</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 8</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 9</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 10</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 11</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Video 12</strong>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Line chart -->
+                <div class="col-md-8 p-4">
+                    <div class="graphbox">
+                        <canvas id="lineChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+
+        const values = [
+            {
+                month: "January",
+                yaxis: { video1: 65, video2: 59, video3: 80, video4: 28 }
+            },
+            {
+                month: "February",
+                yaxis: { video1: 62, video2: 55, video3: 88, video4: 38 }
+            },
+            {
+                month: "March",
+                yaxis: { video1: 45, video2: 74, video3: 35, video4: 74 }
+            },
+            {
+                month: "April",
+                yaxis: { video1: 45, video2: 76, video3: 36, video4: 26 }
+            },
+            {
+                month: "May",
+                yaxis: { video1: 36, video2: 45, video3: 56, video4: 13 }
+            },
+            {
+                month: "June",
+                yaxis: { video1: 14, video2: 80, video3: 43, video4: 35 }
+            },
+            {
+                month: "July",
+                yaxis: { video1: 28, video2: 69, video3: 50, video4: 68 }
+            }
+        ]
+
+        //line
+        var ctxL = document.getElementById("lineChart").getContext('2d');
+        var myLineChart = new Chart(ctxL, {
+            type: 'line',
+            data: {
+                // labels: ["January", "February", "March", "April", "May", "June", "July"],
+                datasets: [
+                    {
+                        label: "My First dataset",
+                        data: values,
+                        backgroundColor: [
+                            'rgba(105, 0, 132, .2)',
+                        ],
+                        borderColor: [
+                            'rgba(200, 99, 132, .7)',
+                        ],
+                        borderWidth: 2,
+                        parsing: {
+                            xAxisKey: 'month',
+                            yAxisKey: 'yaxis.video1'
+                        }
+                    },
+                    // {
+                    //     label: "My Second dataset",
+                    //     data: [28, 48, 40, 19, 86, 27, 90],
+                    //     backgroundColor: [
+                    //         'rgba(0, 137, 132, .2)',
+                    //     ],
+                    //     borderColor: [
+                    //         'rgba(0, 10, 130, .7)',
+                    //     ],
+                    //     borderWidth: 2,
+                    //     parsing: {
+                    //         xAxisKey: 'month',
+                    //         yAxisKey: 'yaxis.video2'
+                    //     }
+                    // }
+                ]
+            },
+            options: {
+                responsive: true
+            }
+        });
+
+        var a = document.querySelectorAll('.list-group-item');
+        for (var i = a.length; i--;) a[i].addEventListener('click', updateChart);
+        function updateChart() {
+            // console.log(this.getAttribute('value'));
+            $(this).addClass("active").siblings().removeClass("active");
+            const aria = this.getAttribute('aria-labelledby');
+            myLineChart.data.datasets[0].parsing.yAxisKey = `yaxis.${aria}`;
+            myLineChart.update();
+        }
+
+    </script>
+
+</body>
+</html>

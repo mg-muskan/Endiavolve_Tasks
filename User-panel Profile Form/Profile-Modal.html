@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap live Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- Personal Css -->
+    <link rel="stylesheet" href="style-resp1.css">
+
+    <!-- Tinymce Library -->
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <!-- Project already present Css -->
+    <!-- <link rel="stylesheet" href="indexcss.css"> -->
+    <!-- Roboto Condensed Font -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+
+    <!-- Quill Editor -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+</head>
+<body>
+
+    <section class="user-panel" id="user-panel">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Launch modal
+        </button>
+        
+        <!-- In the web -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="container">
+                            <div class="row border">
+                                <div class="col-md-4 border">
+                                    <div class="side-nav">
+                                        <div class="info">
+                                            <img src="user.png" alt="">
+                                            <label for=""><b>Name</b></label>
+                                        </div>
+                                        <div class="list-group list-group-flush border-bottom">
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm border-top" aria-current="true">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="small">View Public Profile</strong>
+                                                    <!-- <small>Wed</small> -->
+                                                </div>
+                                                <!-- <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.</div> -->
+                                            </a>
+                                            <a href="#" class="list-group-item list-group-item-action active py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between" aria-controls="profile">
+                                                    <strong class="mb-1 small">Profile</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Photo</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Account Security</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Subscriptions</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Payment Methods</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Privacy</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Notifications</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">API Clients</strong>
+                                                </div>
+                                            </a>
+                                            
+                                            <a href="#" class="list-group-item list-group-item-action py-2 lh-sm">
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <strong class="mb-1 small">Close Account</strong>
+                                                </div>
+                                            </a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-8">
+                                    <!-- Heading -->
+                                    <div class="profile" id="profile" aria-labelledby="profile-tab">
+                                        <div class="heading">
+                                            <h4><b>Public Profile</b></h4>
+                                            <h6>Add informatio about yourself</h6>
+                                        </div>
+                                        <hr>
+                                        <div class="rest">
+                                            <h6><b>Basics:</b></h6>
+                                            <form>
+                                                <div class="mb-1">
+                                                    <input type="text" class="form-control" id="" placeholder="First Name">
+                                                </div>
+                                                <div class="mb-1">
+                                                    <input type="text" class="form-control" id="" placeholder="Last Name">
+                                                </div>
+                                                <div class="mb-1">
+                                                    <div class="d-flex justify-content-between">
+                                                        <input type="text" class="form-control" id="headline" placeholder="Headline" maxlength="60" onkeypress="return isNumberKey(event)">
+                                                        <!-- <label class="form-label" for="headline">60</label> -->
+                                                    </div>
+                                                    <div id="headline" class="form-text">Add a professional headline like, "instructor at udemy" or "Architecture"</div>
+                                                </div>
+                                                <div class="mb-1">
+                                                    <div class="form-control" id="editor"></div>
+                                                    <!-- <textarea class="form-control" id="tiny" rows="2"></textarea> -->
+                                                    <div id="textarea" class="form-text">Links and coupon codes are not permitted in this section.</div>
+                                                </div>
+                                                <select class="form-select" aria-label="Default select example">
+                                                    <option selected>English (US)</option>
+                                                    <option value="1">English (UK)</option>
+                                                    <option value="2">English (India)</option>
+                                                    <option value="3">English (Austria)</option>
+                                                </select>
+                                            </form>
+                                            <hr>
+                                            <h6><b>Links:</b></h6>
+                                            <form>
+                                                <div class="mb-2">
+                                                    <input type="text" class="form-control" id="" placeholder="Website (https(s)://...)">
+                                                </div>
+                                                <div class="mb-1">
+                                                    <div class="input-group">
+                                                        <label for="" class="input-group-text">http://twitter.com/</label>
+                                                        <input type="text" class="form-control" id="" placeholder="Twitter Profile">
+                                                    </div>
+                                                    <div id="" class="form-text">Add your Twitter username (e.g. Johnsmith)</div>
+                                                </div>
+                                                <div class="mb-1">
+                                                    <div class="input-group">
+                                                        <label for="" class="input-group-text">http://facebook.com/</label>
+                                                        <input type="text" class="form-control" id="" placeholder="Facebook Profile">
+                                                    </div>
+                                                    <div id="" class="form-text">Add your Facebook username (e.g. Johnsmith)</div>
+                                                </div>
+                                                <div class="mb-1">
+                                                    <div class="input-group">
+                                                        <label for="" class="input-group-text">http://linkedin.com/</label>
+                                                        <input type="text" class="form-control" id="" placeholder="LinkedIn Profile">
+                                                    </div>
+                                                    <div id="" class="form-text">Add your LinkedIn resource id (e.g. in/Johnsmith)</div>
+                                                </div>
+                                                <div class="mb-2">
+                                                    <div class="input-group">
+                                                        <label for="" class="input-group-text">http://youtube.com/</label>
+                                                        <input type="text" class="form-control" id="" placeholder="Youtube Profile">
+                                                    </div>
+                                                    <div id="" class="form-text">Add your Youtube username (e.g. Johnsmith)</div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary close-button">Save</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let toolbarOptions = (
+            ['bold', 'italic']
+        )
+
+        let quill = new Quill("#editor", {
+        modules: {
+            toolbar: toolbarOptions,
+        },
+        theme: "snow"
+        })
+        // tinymce.init({
+        //     selector: 'textarea#tiny',
+        //     toolbar: 'bold italic'
+        // })
+        
+        var a = document.querySelectorAll('.list-group-item');
+        for (var i = a.length; i--;) a[i].addEventListener('click', active);
+        function active() {
+            $(this).addClass("active").siblings().removeClass("active");
+        }
+      </script>
+
+</body>
+</html>

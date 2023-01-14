@@ -1,0 +1,128 @@
+* {
+    font-family: 'Roboto Condensed';
+    /* scrollbar-width: thin; */
+    scrollbar-color: #c5c5c5 #f6f6f6;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #f6f6f6;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #c5c5c5;
+    border-radius: 20px;
+    border: 3px solid #f6f6f6;
+}
+
+.notification_info {
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 0;
+    background: white;
+    /* opacity: 0; */
+    width: 350px;
+    /* height: 0px; */
+    height: 50vh;
+    overflow-y: auto;
+    border: 1px solid #c7d8e2;
+    border-radius: 3px;
+    animation: open 1s;
+    box-shadow: 5px 5px 30px 10px rgba(0, 0, 0, 0.125);
+}
+@keyframes open {
+    from {
+        opacity: 0;
+        transition: all .5s ease-in-out;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes close {
+    from {
+        opacity: 1;
+        /* height: 0px; */
+        /* transition: .5s opacity, 250ms height; */
+    }
+    to {
+        opacity: 0;
+    }
+}
+/* .notification_info:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    border: 10px solid;
+    border-color: transparent transparent yellow transparent;
+} */
+/* .notification_info li .pic {
+    display: flex;
+} */
+.notification_info .pic {
+    margin-right: 5px;
+}
+.notification_info video, .notification_info iframe {
+    width: 60px;
+    height: 50px;
+}
+/* .notification_info li {
+    border-bottom: 1px solid #f1f2f4;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+} */
+.tooltip-con .list-group-item:first-child {
+    display: none;
+}
+.notification_info .notif {
+    margin-left: 5px;
+    width: 165px;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
+}
+.notification_info .video {
+    margin-right: 8px;
+}
+.notification_info .time {
+    font-size: 13px;
+    margin-left: 50px;
+    padding: 8px;
+}
+.content:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+}
+.notification_info.active {
+    display: block;
+    /* animation: close 1s; */
+}
+
+.notification_info .icon {
+    position: relative;
+}
+.tooltip-con {
+    content: '';
+    position: absolute;
+    visibility: hidden;
+    border-radius: 6px;
+    white-space: normal;
+    z-index: 2;
+    top: 30px;
+    right: 0;
+    padding: 5px 0;
+}
+.tooltip-con.active {
+    visibility: visible;
+    background-color: white;
+}
+.tooltip-con .contents:hover {
+    background-color: rgba(0, 0, 0, 0.125);
+}

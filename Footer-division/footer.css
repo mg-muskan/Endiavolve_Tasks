@@ -1,0 +1,123 @@
+* {
+    font-family: 'Roboto Condensed';
+    --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+}
+
+.footer-content {
+    /* margin-top: 10px; */
+    padding: 0px;
+    font-size: 16px;
+    color: #000;
+    /* border-top: 5px solid rgba(0, 0, 0, 0.7); */
+}
+
+h3 {
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.social-list {
+    padding: 0;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.social-list li{
+    display: inline-flex;
+    /* display: inline-block; */
+    padding-right: 10px;
+}
+
+.social-list li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.social-list li a:hover {
+    color: #34c6d3;
+}
+
+#contact-left p {
+    color: #000;
+    margin-bottom: 30px;
+}
+
+address {
+    color: #000;
+}
+
+address strong,
+#phone-fax-email strong {
+    letter-spacing: 1px;
+}
+
+#contact-left {
+    margin-top: 20%;
+    display: block;
+}
+#contact-right {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.175);
+}
+
+.feedback-form .form-control {
+    border-color: #000;
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.form-control:focus {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-weight: 300;
+    /* transition: .5s ease; */
+}
+
+.form-control::placeholder {
+    color: #000;
+}
+.form-control:focus::placeholder {
+    color: #fff;
+}
+
+#footer-copyrights p {
+    margin: 0;
+    color: #fff;
+}
+
+#send-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-general {
+    border-width: 2px;
+    /* border-radius: 10; */
+    padding: 10px 20px 10px 20px;
+    background-color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.btn-white {
+    /* border-color: #000; */
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-white:hover,
+.btn-white:focus {
+    background-color:#3472fa;
+    color: #fff;
+    transition: all 0.5s ease-in-out;
+}

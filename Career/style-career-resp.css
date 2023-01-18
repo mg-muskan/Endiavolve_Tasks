@@ -1,0 +1,55 @@
+@media (max-width: 1200px) {
+    .card {
+        width: 14rem;
+    }
+}
+
+@media (min-width: 770px) {
+    .side {
+        padding-top: 60px;
+    }
+}
+
+@media (max-width: 992px) {
+    .card {
+        width: 26rem;
+    }
+}
+
+@media (max-width: 710px) {
+    
+    .search-box {
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .search-box .input {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+}
+
+@media (max-width: 582px) {
+
+    .banner {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
+    }
+    #dis .dis-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+}
+
+@media (max-width:440px) {
+    
+    .position-search .input {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+
+}

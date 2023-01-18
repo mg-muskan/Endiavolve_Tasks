@@ -1,0 +1,178 @@
+* {
+    font-family: 'Roboto Condensed';
+}
+#joinus-banner {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+.page {
+    width: 100%;
+    text-align: center;
+}
+.career {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    margin-top: -50px;
+    padding: 10px;
+    border: 1px solid #3742fa;
+    border-radius: 10px;
+    background-color: white;
+}
+.positions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.positions label {
+    color: rgb(56, 49, 56);
+}
+.positions a {
+    color: rgb(118, 117, 117);
+}
+.position-search {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+.position-search .input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(56, 49, 56);
+}
+.position-search .btn {
+    width: 100%;
+    border-color: rgb(56, 49, 56);
+    align-items: center;
+}
+.position-search .btn:hover {
+    background-color: #3742fa;
+    color: white;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+.heading h1::after, .heading h2::after {
+    background-color: #3742fa;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+.card-head {
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.card-head .card {
+    margin-top: 30px;
+    width: 20rem;
+    border-radius: 0;
+}
+.card-head .card img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
+.rest {
+    margin-top: 64px;
+    /* margin-bottom: 4rem; */
+}
+
+hr {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.info {
+    /* margin-top: 2rem; */
+    margin-bottom: 16px;
+}
+
+.jobs ul {
+    list-style: none;
+}
+.jobs .card {
+    width: 17rem;
+    color: black;
+    border-radius: 0;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 28px;
+    text-decoration: none;
+    border-bottom-width: 3px;
+}
+.jobs .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+.jobs .card:hover {
+    border-bottom-width: 3px;
+    border-bottom-color: #3742fa;
+}
+
+.vacancies {
+    margin-top: 48px;
+    background-color: #dfe6e9;
+}
+
+tbody {
+    border-bottom: black;
+}
+tbody a {
+    text-decoration: none;
+    color: black;
+}
+.vacancies table {
+    margin-bottom: 58px;
+}
+.vacancies table tr {
+    padding: 20px;
+}
+
+/* =========================================================================================================
+
+                                            Search Results
+
+========================================================================================================== */
+
+.search-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    margin-top: -35px;
+    padding: 10px;
+    border: 1px solid #3742fa;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.vacancies-search {
+    margin-top: 5rem;
+}

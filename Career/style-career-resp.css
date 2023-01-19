@@ -14,30 +14,33 @@
     .card {
         width: 26rem;
     }
+    .card img {
+        height: 355px;
+    }
 }
 
-@media (max-width: 710px) {
-    
+@media (max-width: 910px) {
+
     .search-box {
         width: auto;
         margin-left: 10px;
         margin-right: 10px;
     }
 
-    .search-box .input {
-        width: 80px;
-        margin-bottom: 10px;
+}
+
+@media (max-width: 830px) {
+    
+    .banner {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: auto;
     }
 
 }
 
 @media (max-width: 582px) {
 
-    .banner {
-        margin-left: 10px;
-        margin-right: 10px;
-        width: auto;
-    }
     #dis .dis-container {
         margin-left: 10px;
         margin-right: 10px;
@@ -48,6 +51,10 @@
 @media (max-width:440px) {
     
     .position-search .input {
+        width: 80px;
+        margin-bottom: 10px;
+    }
+    .search-box .input {
         width: 80px;
         margin-bottom: 10px;
     }

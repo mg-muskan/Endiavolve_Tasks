@@ -63,18 +63,26 @@
 .side ul li {
     padding: 0 0 40px;
 }
-.side ul li a {
+.rest a {
     color: black;
     margin-right: 10px;
 }
+.rest a:hover {
+    color: #34c6d3;
+}
 
-.side .btn {
+.rest .btn { 
     /* width: 100%; */
     /* border-color: rgb(56, 49, 56); */
     border-color: #3742fa;
     align-items: center;
 }
-.side .btn:hover {
-    background-color: #3742fa;
+.rest .btn:hover {
     color: white;
+    background-color: #3742fa;
+}
+
+.hide-show {
+    display: block;
+    justify-content: space-between;
 }

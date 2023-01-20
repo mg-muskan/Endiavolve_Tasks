@@ -1,0 +1,28 @@
+* {
+    font-family: 'Robot Condensed';
+}
+.user-panel-suggestion .carousel-indicators li.resp {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 1;
+    background-color: #34c6d3;
+}
+.user-panel-suggestion .carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    background-color: #7f8181;
+}
+.user-panel-suggestion #carouselControls .carousel-icon {
+    display: none;
+}
+.user-panel-suggestion #carouselControls:hover .carousel-icon {
+    display: block;
+    transition: .5s ease;
+}
+.user-panel-suggestion .carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233742fa' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+.user-panel-suggestion .carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%233742fa' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}

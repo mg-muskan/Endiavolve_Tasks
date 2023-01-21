@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed';
+}
+#joinus-banner {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#joinus-banner .py-5 {
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
+}
+
+#joinus-banner .page {
+    width: 100%;
+    text-align: center;
+}
+#joinus-banner .career {
+    display: flex;
+    min-height: 130px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#career-path {
+    padding: 15px;
+    background-color: #dfe6e9;
+}
+#career-path a {
+    color: black;
+    text-decoration: underline;
+}
+
+#career-path .container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+}
+
+#job-desciption .heading {
+    text-align: start;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+#job-desciption .heading h2::after {
+    background-color: #3742fa;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px;
+    margin-left: 0;
+}
+
+#job-desciption .side ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+#job-desciption .side ul li {
+    padding: 0 0 40px;
+}
+#job-desciption .rest a {
+    color: black;
+    margin-right: 10px;
+}
+#job-desciption .rest a:hover {
+    color: #34c6d3;
+}
+
+#job-desciption .rest .btn { 
+    /* width: 100%; */
+    /* border-color: rgb(56, 49, 56); */
+    border-color: #3742fa;
+    align-items: center;
+}
+#job-desciption .rest .btn:hover {
+    color: white;
+    background-color: #3742fa;
+}
+
+#job-desciption .hide-show {
+    display: block;
+    justify-content: space-between;
+}

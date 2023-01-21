@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Condensed';
+}
+
+#joinus-banner {
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#joinus-banner .py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+}
+
+#joinus-banner .page {
+    width: 100%;
+    text-align: center;
+}
+
+#joinus-banner .career {
+    display: flex;
+    min-height: 100px;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#user-panel-career-search-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    margin-top: -50px;
+    padding: 10px;
+    border: 1px solid #3742fa;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#user-panel-career-search-box .positions,
+#user-panel-career-search .positions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#user-panel-career-search-box label,
+#user-panel-career-search label {
+    color: rgb(56, 49, 56);
+}
+
+#user-panel-career-search-box a,
+#user-panel-career-search a {
+    color: rgb(118, 117, 117);
+}
+
+#user-panel-career-search-box .position-search,
+#user-panel-career-search .position-search {
+    display: flex;
+    padding-top: 10px;
+    justify-content: space-between;
+}
+
+#user-panel-career-search-box .input,
+#user-panel-career-search .input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid rgb(56, 49, 56);
+}
+
+#user-panel-career-search-box .btn,
+#user-panel-career-search .btn {
+    width: 100%;
+    color: black;
+    border-color: rgb(56, 49, 56);
+    align-items: center;
+}
+
+#user-panel-career-search-box .btn:hover,
+#user-panel-career-search .btn:hover {
+    background-color: #3742fa;
+    color: white;
+}
+
+#user-panel-career-aboutus .heading,
+#user-panel-career-vacancies .heading {
+    text-align: center;
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+#user-panel-career-aboutus .heading h1::after,
+#user-panel-career-vacancies .heading h2::after {
+    background-color: #3742fa;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 3px;
+    margin: 20px auto;
+}
+
+#user-panel-career-aboutus .card-head {
+    margin: 0;
+    padding: 0;
+    margin-top: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+#user-panel-career-aboutus .card-head .card {
+    margin-top: 30px;
+    width: 20rem;
+    border-radius: 0;
+}
+
+#user-panel-career-aboutus .card-head .card img {
+    width: 100%;
+    height: 235px;
+    object-fit: cover;
+}
+
+#user-panel-career-aboutus .rest {
+    margin-top: 64px;
+    /* margin-bottom: 4rem; */
+}
+
+.user-panel-career-hr {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+#user-panel-career-vacancies .info {
+    /* margin-top: 2rem; */
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+#user-panel-career-jobs ul {
+    list-style: none;
+}
+
+#user-panel-career-jobs .card {
+    width: 17rem;
+    color: black;
+    border-radius: 0;
+    margin-top: 30px;
+    margin-left: 25px;
+    margin-right: 28px;
+    text-decoration: none;
+    border-bottom-width: 3px;
+}
+
+#user-panel-career-jobs .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+#user-panel-career-jobs .card:hover {
+    border-bottom-width: 3px;
+    border-bottom-color: #3742fa;
+}
+
+#user-panel-career-vacancies {
+    margin-top: 48px;
+    background-color: #dfe6e9;
+}
+
+#user-panel-career-vacancies tbody,
+#user-panel-vacancies-search tbody {
+    border-bottom: black;
+}
+
+#user-panel-career-vacancies tbody a,
+#user-panel-vacancies-search tbody a {
+    text-decoration: none;
+    color: black;
+}
+
+#user-panel-career-vacancies table,
+#user-panel-vacancies-search table {
+    line-height: 50px;
+}
+
+#user-panel-career-vacancies table td a:hover,
+#user-panel-vacancies-search table td a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* =========================================================================================================
+
+                                            Search Results
+
+========================================================================================================== */
+
+#user-panel-career-search .search-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    margin-top: -30px;
+    padding: 15px;
+    border: 1px solid #3742fa;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#user-panel-vacancies-search {
+    margin-top: 5rem;
+}

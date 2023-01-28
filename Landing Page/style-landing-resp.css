@@ -1,0 +1,48 @@
+@media (max-width: 767px) {
+    .landing-home .image img,
+    .landing-curriculum .image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .landing-home-text-box .details #home-heading h3,
+    .landing-curriculum-text-box #heading h3 {
+        font-size: 30px;
+    }
+    
+    .landing-home .details .btn-general {
+        font-size: 12px;
+    }
+    
+    .landing-home .details .rest h5,
+    .landing-curriculum .details #rest h5 {
+        font-size: 18px;
+    }
+    
+    .landing-career-text-box h3 {
+        text-align: start;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .landing-curriculum-text-box #heading h1::after,
+    .landing-career-text-box .content-title-underline {
+        width: 100%;
+    }
+
+    .landing-career-text-box p {
+        text-align: start;
+    }
+
+    .landing-aboutus-contain-box .image {
+        margin-right: 0;
+    }
+    .landing-aboutus-contain-box .details {
+        margin-left: 0;
+    }
+
+    .landing-aboutus .details .content {
+        text-align: start;
+    }
+
+}

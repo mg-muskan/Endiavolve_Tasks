@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.landing-home-contain-box,
+.landing-curriculum-contain-box,
+.landing-career-contain-box,
+.landing-aboutus-contain-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.landing-home .image,
+.landing-curriculum .image,
+.landing-career .image,
+.landing-aboutus .image {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-home-contain-box .image img {
+    width: 70%;
+    height: 70%;
+}
+
+.landing-home .details,
+.landing-curriculum .details,
+.landing-career .details,
+.landing-aboutus .details {
+    display: table;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+.landing-home .details .details-inner,
+.landing-curriculum .details .details-inner,
+.landing-aboutus .details .details-inner {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%); */
+    
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* .landing-home-text-box #home-heading {
+    letter-spacing: 2px;
+} */
+
+.landing-home-contain-box #home-heading h3 {
+    color: #41464b;
+    font-size: 45px;
+    font-weight: 700;
+    margin: 20px 0px 20px 0px;
+    text-transform: uppercase;
+}
+
+.landing-home-text-box #home-btn i {
+    margin-right: 8px;
+}
+.landing-home-text-box #home-btn .btn {
+    border: 1px solid #41464b;
+    border-radius: 0;
+    color: #41464b;
+}
+.landing-home-text-box #home-btn .btn:hover {
+    color: #fff;
+    background-color: #3742fa;
+}
+.landing-home-text-box #home-btn .btn:active {
+    background-color: #ffa502;
+}
+
+
+/* ========================================================================================================
+
+                                            Curriculum
+
+======================================================================================================== */
+
+.landing-curriculum-contain-box .image img {
+    width: 60%;
+    height: 60%;
+}
+
+.landing-curriculum-text-box {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+    padding: 0 50px;
+}
+
+.landing-career-text-box .details-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+.landing-curriculum-text-box #heading h1 {
+    color: #41464b;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.landing-curriculum-text-box #heading h1::after {
+    content: '';
+    display: block;
+    width: 200px;
+    height: 3px;
+    background: #3742fa;
+}
+
+.landing-curriculum-text-box p {
+    color: #64707b;
+    margin-top: 40px;
+}
+
+
+/* ========================================================================================================
+
+                                            About Us & Career
+
+======================================================================================================== */
+
+.landing-career-contain-box .image img,
+.landing-aboutus-contain-box .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.landing-career-text-box h3,
+.landing-aboutus-text-box h3 {
+    color: #41464b;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+}
+
+.landing-career-text-box .content-title-underline {
+    width: 100px;
+    height: 3px;
+    background-color: #3742fa;
+    margin: 0 auto 30px auto;
+}
+
+.landing-aboutus-contain-box .image {
+    margin-right: 20px;
+}
+.landing-aboutus-contain-box .details {
+    margin-left: 20px;
+}
+
+.landing-aboutus-text-box h1 {
+    font-size: x-large;
+}
+
+.landing-aboutus-text-box .content-title-underline {
+    background-color: #3742fa;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    margin: 20px auto;
+}
+
+
+
+
+.btn-general {
+    border-width: 2px;
+    padding: 10px 20px 10px 20px;
+    background-color: transparent;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+p {
+    color: #64707b;
+    font-weight: 300;
+    font-size: 15px;
+}

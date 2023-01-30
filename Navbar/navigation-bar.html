@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navigation.css">
+    <!-- Font-Awesome -->
+    <script src="https://kit.fontawesome.com/9d24440128.js" crossorigin="anonymous"></script>
+    <!-- Google font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header>
+        <nav class="navigation">
+            <!-- <div class="logo"> -->
+                <img src="https://endiavolve.com/img/logo/LOGO2.png" alt="logo">
+            <!-- </div> -->
+            <ul class="menu" id="menu">
+                <li><a href="../Landing Page/Home.html" class="active">Home</a></li>
+                <li><a href="../Landing Page/Curriculum.html">Curriculum</a></li>
+                <li><a href="../Landing Page/Career.html">Career</a></li>
+                <li><a href="#">Suggestion</a></li>
+                <li><a href="../Landing Page/AboutUs.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <div class="login-register">
+                <a href=""><i class="fa-solid fa-user"></i>Login</a>
+                <a href="">Register</a>
+                <div class="bars">
+                    <input type="checkbox" id="openSidebarMenu">
+                    <label for="openSidebarMenu" class="sidebarIconToggle">
+                        <div class="spinner top"></div>
+                        <div class="spinner middle"></div>
+                        <div class="spinner bottom"></div>
+                    </label>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    <script>
+
+        const openbtn = document.getElementById('openSidebarMenu');
+        const navI = document.getElementById('menu');
+        // var all = document.createElement('nav');
+        // const menu = document.getElementById('menu');
+        // const log = document.getElementById('log-reg');
+        // all.appendChild(menu, log);
+        openbtn.addEventListener('click', () => {
+            setTimeout(function() {
+                // $('a').slideToggle();
+                navI.classList.toggle('active');
+            }, 200);
+            
+        });
+
+    </script>
+
+</body>
+</html>

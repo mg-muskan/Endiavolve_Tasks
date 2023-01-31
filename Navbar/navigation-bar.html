@@ -15,10 +15,8 @@
     
     <!-- Navbar -->
     <header>
-        <nav class="navigation">
-            <!-- <div class="logo"> -->
-                <img src="https://endiavolve.com/img/logo/LOGO2.png" alt="logo">
-            <!-- </div> -->
+        <nav class="navigation" id="navbar">
+            <img src="https://endiavolve.com/img/logo/LOGO2.png" alt="logo">
             <ul class="menu" id="menu">
                 <li><a href="../Landing Page/Home.html" class="active">Home</a></li>
                 <li><a href="../Landing Page/Curriculum.html">Curriculum</a></li>
@@ -30,7 +28,7 @@
             <div class="login-register">
                 <a href=""><i class="fa-solid fa-user"></i>Login</a>
                 <a href="">Register</a>
-                <div class="bars">
+                <div class="bars" id="bars">
                     <input type="checkbox" id="openSidebarMenu">
                     <label for="openSidebarMenu" class="sidebarIconToggle">
                         <div class="spinner top"></div>
@@ -41,24 +39,23 @@
             </div>
         </nav>
     </header>
+    <!-- End Navbar -->
 
     
     <script>
-
         const openbtn = document.getElementById('openSidebarMenu');
         const navI = document.getElementById('menu');
-        // var all = document.createElement('nav');
-        // const menu = document.getElementById('menu');
-        // const log = document.getElementById('log-reg');
-        // all.appendChild(menu, log);
         openbtn.addEventListener('click', () => {
-            setTimeout(function() {
-                // $('a').slideToggle();
-                navI.classList.toggle('active');
-            }, 200);
+            if(openbtn.checked) {
+                setTimeout(function() {
+                    navI.classList.add('active');
+                }, 200);
+            }
+            else {
+                navI.classList.remove('active');
+            }
             
         });
-
     </script>
 
 </body>

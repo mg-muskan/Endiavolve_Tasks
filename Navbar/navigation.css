@@ -3,169 +3,108 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto Condensed';
 }
+
 header {
     width: 100%;
     top: 0;
     position: fixed;
     background-color: #3742fa;
 }
-.navigation {
+
+#navbar {
     display: flex;
     align-items: center;
     margin-left: 5px;
     margin-right: 5px;
     justify-content: space-between;
 }
-.navigation img {
+
+#navbar img {
     width: 200px;
 }
-.menu li {
+
+#navbar .menu li {
     display: inline-flex;
 }
-.menu li a {
+
+#navbar .menu li a {
     color: white;
     margin: 10px;
     margin-top: 0;
-    /* margin-bottom: 0; */
+    margin-bottom: 0;
     padding: 10px;
     padding-bottom: 0;
     transition: .2s;
-    /* border-radius: 5px; */
     text-decoration: none;
 }
-.menu li a:after, .login-register a:after {
+
+#navbar .menu li a:after, .login-register a:after {
     display: block;
     content: '';
-    margin-top: 5px;
+    margin-top: 3px;
     transform: scaleX(0);
     transition: transform 250ms ease-in-out;
     border-top: 3px solid #ffa502;
 }
-.menu li a:hover {
-    /* margin-bottom: 0; */
+
+#navbar .menu li a:hover {
     font-weight: 700;
-    /* transition: .5s ease-in-out; */
 }
-.menu li a:hover:after, .login-register a:hover:after {
+
+#navbar .menu li a:hover:after, .login-register a:hover:after {
     transform: scaleX(1);
 }
-.login-register {
+
+#navbar .login-register {
     display: flex;
 }
-.login-register a {
-    /* margin: 10px; */
+
+#navbar .login-register a {
     color: white;
-    /* margin: 5px; */
     padding: 10px;
     text-decoration: none;
 }
-.login-register .bars {
+
+#navbar .login-register .bars {
     margin: 15px;
     padding: 5px;
 }
-.login-register a i {
+
+#navbar .login-register a i {
     margin-right: 5px;
 }
-.login-register a:hover {
-    /* color: #000; */
+
+#navbar .login-register a:hover {
     color: #ffa502;
     transition: .5s ease-in-out;
-    /* transform: scale(1.05); */
-    /* background-size: contain;
-    background-color: #ffa502; */
-}
-@media (max-width: 1090px) {
-    .navigation {
-        font-size: 0.9rem;
-    }
-    .menu li a, .login-register a {
-        margin-left: 0;
-        margin-right: 0;
-    }
-}
-@media (max-width: 900px) {
-    .navigation {
-        font-size: 0.65rem;
-    }
 }
 
-.bars {
+#navbar .bars {
     display: none;
 }
-@media (max-width: 770px) {
-    .bars {
-        display: flex;
-    }
-    .navigation {
-        font-size: 0.8rem;
-    }
-    .menu {
-        display: block;
-        background-color: #3742fa;
-        position: absolute;
-        top: -500px;
-        left: 0;
-        width: 100%;
-    }
-    .menu.active {
-        top: 100%;
-        transform: all .5s ease-in-out;
-    }
-    .menu li {
-        display: flex;
-        padding-left: 5%;
-        padding-right: 5%;
-        text-align: center;
-        flex-direction: column;
-    }
-    .menu li a {
-        border-radius: 5px;
-        padding: 10px;
-    }
-    .menu li a:after {
-        display: none;
-    }
-    .menu li a:hover {
-        color: #fff;
-        font-weight: 100;
-        background-color: #ffa502;
-        transform: scale(1.05);
-    }
-    .menu li a.active {
-        transform: scale(1);
-    }
+
+#navbar #navbar .bars .fas {
+    cursor: pointer;
 }
 
-@media (max-width:455px) {
-    .navigation img {
-        width: 150px;
-    }
+#navbar #navbar .bars .fas.open:before {
+    content: '\f00d';
 }
-@media (max-width:355px) {
-    header {
-        line-height: 40px;
-    }
-    .navigation img {
-        width: 100px;
-    }
-    .login-register a {
-        padding: 3px;
-    }
-}
-
 
 /* Spinner */
-#openSidebarMenu:checked ~ #sidebarMenu {
+#navbar #openSidebarMenu:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
 
-input#openSidebarMenu{
+#navbar input#openSidebarMenu{
     display: none;
 }
-.sidebarIconToggle {
+
+#navbar .sidebarIconToggle {
     width: 22px;
     position: absolute;
     z-index: 99;
@@ -174,23 +113,134 @@ input#openSidebarMenu{
     transition: all 0.3s;
     cursor: pointer; 
 }
-.spinner {
+
+#navbar .spinner {
     height: 3px;
-    background-color: #000;
+    background-color: #fff;
     transition: all 0.3s;
 }
-.spinner.middle ,
-.spinner.bottom{
+
+#navbar .spinner.middle ,
+#navbar .spinner.bottom{
     margin-top: 3px;
 }
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+
+#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
     opacity: 0;
 }
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+
+#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
     transform: rotate(135deg);
     margin-top: 8px;
 }
-#openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+
+#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
     transform: rotate(-135deg);
     margin-top: -9px;
+}
+
+@media (max-width: 1090px) {
+    #navbar {
+        font-size: 0.9rem;
+    }
+
+    #navbar .menu li a, .login-register a {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+@media (max-width: 900px) {
+    #navbar {
+        font-size: 0.65rem;
+    }
+}
+
+@media (max-width: 770px) {
+    #navbar .bars {
+        display: flex;
+    }
+
+    #navbar {
+        font-size: 0.8rem;
+    }
+
+    #navbar .menu {
+        /* display: none; */
+        background-color: #3742fa;
+        position: fixed;
+        top: 40px;
+        height: 0px;
+        opacity: 0;
+        pointer-events: none;
+        left: 0;
+        width: 100%;
+        transition: height 250ms, .5s ease-in-out;
+    }
+
+    #navbar .menu.active {
+        top: 40px;
+        opacity: 1;
+        pointer-events: initial;
+        height: 250px;
+    }
+
+    #navbar .menu li {
+        display: flex;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin: 5px;
+        text-align: center;
+        flex-direction: column;
+    }
+
+    #navbar .menu li a {
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    #navbar .menu li a:after {
+        display: none;
+    }
+
+    #navbar .menu li a:hover {
+        color: #fff;
+        font-weight: 100;
+        background-color: #ffa502;
+        transform: scale(1.05);
+    }
+
+    #navbar .menu li a.active {
+        transform: scale(1);
+    }
+}
+
+@media (max-width:455px) {
+    #navbar img {
+        width: 150px;
+    }
+}
+@media (max-width:355px) {
+    header {
+        line-height: 40px;
+    }
+
+    #navbar img {
+        width: 100px;
+    }
+
+    #navbar .menu {
+        top: 2px;
+    }
+
+    #navbar .menu li {
+        margin: 0px;
+    }
+
+    #navbar .menu li a {
+        padding: 0px;
+    }
+
+    #navbar .login-register a {
+        padding: 2px;
+    }
 }

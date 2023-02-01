@@ -3230,14 +3230,14 @@ ol {
 
 ===============================================================================================*/
 /* Header */
-/* header {
+/* #header-navbar {
     width: 100%;
-    top: 0;
-    position: fixed;
+    top: 20px;
+    left: 20px;
     background-color: #3742fa;
 } */
 
-#navbar {
+#navbar-nav {
     width: 100%;
     display: flex;
     align-items: center;
@@ -3246,26 +3246,25 @@ ol {
     justify-content: space-between;
 }
 
-#navbar img {
+#navbar-nav .navbar-logo img {
     width: 200px;
 }
 
-#navbar #menu li {
+#navbar-nav .navbar-menu li {
     display: inline-flex;
 }
 
-#navbar #menu li a {
+#navbar-nav .navbar-menu li a {
     color: white;
     margin: 10px;
     margin-top: 0;
-    margin-bottom: 0;
     padding: 10px;
     padding-bottom: 0;
     transition: .2s;
     text-decoration: none;
 }
 
-#navbar #menu li a:after, .login-register a:after {
+#navbar-nav .navbar-menu li a:after, .navbar-login-register a:after {
     display: block;
     content: '';
     margin-top: 3px;
@@ -3274,60 +3273,60 @@ ol {
     border-top: 3px solid #ffa502;
 }
 
-#navbar #menu li a:hover {
+#navbar-nav .navbar-menu li a:hover {
     font-weight: 700;
 }
 
-#navbar #menu li a:hover:after, .login-register a:hover:after {
+#navbar-nav .navbar-menu li a:hover:after, .navbar-login-register a:hover:after {
     transform: scaleX(1);
 }
 
-#navbar .login-register {
+#navbar-nav .navbar-login-register {
     display: flex;
 }
 
-#navbar .login-register a {
+#navbar-nav .navbar-login-register a {
     color: white;
     padding: 10px;
     text-decoration: none;
 }
 
-#navbar .login-register .bars {
+#navbar-nav .navbar-bars {
     margin: 15px;
     padding: 5px;
 }
 
-#navbar .login-register a i {
+#navbar-nav .navbar-login-register a i {
     margin-right: 5px;
 }
 
-#navbar .login-register a:hover {
+#navbar-nav .navbar-login-register a:hover {
     color: #ffa502;
     transition: .5s ease-in-out;
 }
 
-#navbar .bars {
+#navbar-nav .navbar-bars {
     display: none;
 }
 
-#navbar .bars .fas {
+#navbar-nav .navbar-bars .fas {
     cursor: pointer;
 }
 
-#navbar .bars .fas.open:before {
+#navbar-nav .navbar-bars .fas.open:before {
     content: '\f00d';
 }
 
 /* Spinner */
-#navbar #openSidebarMenu:checked ~ #sidebarMenu {
+#navbar-nav .navbar-bars #openSidebarMenu:checked ~ #sidebarMenu {
     transform: translateX(0);
 }
 
-#navbar input#openSidebarMenu{
+#navbar-nav .navbar-bars input#openSidebarMenu{
     display: none;
 }
 
-#navbar .sidebarIconToggle {
+#navbar-nav .navbar-bars .sidebarIconToggle {
     width: 22px;
     position: absolute;
     z-index: 99;
@@ -3337,58 +3336,58 @@ ol {
     cursor: pointer; 
 }
 
-#navbar .spinner {
+#navbar-nav .navbar-bars .spinner {
     height: 3px;
     background-color: #fff;
     transition: all 0.3s;
 }
 
-#navbar .spinner.middle ,
-#navbar .spinner.bottom{
+#navbar-nav .navbar-bars .spinner.middle ,
+#navbar-nav .navbar-bars .spinner.bottom{
     margin-top: 3px;
 }
 
-#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
+#navbar-nav .navbar-bars #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.middle {
     opacity: 0;
 }
 
-#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
+#navbar-nav .navbar-bars #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.top {
     transform: rotate(135deg);
     margin-top: 8px;
 }
 
-#navbar #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
+#navbar-nav .navbar-bars #openSidebarMenu:checked ~ .sidebarIconToggle > .spinner.bottom {
     transform: rotate(-135deg);
     margin-top: -9px;
 }
 /* End Spinner */
 
 @media (max-width: 1090px) {
-    #navbar {
+    #navbar-nav {
         font-size: 0.9rem;
     }
 
-    #navbar #menu li a, .login-register a {
+    #navbar-nav .navbar-menu li a, .navbar-login-register a {
         margin-left: 0;
         margin-right: 0;
     }
 }
 @media (max-width: 900px) {
-    #navbar {
+    #navbar-nav {
         font-size: 0.65rem;
     }
 }
 
 @media (max-width: 770px) {
-    #navbar .bars {
+    #navbar-nav .navbar-bars {
         display: flex;
     }
 
-    #navbar {
+    #navbar-nav {
         font-size: 0.8rem;
     }
 
-    #navbar #menu {
+    #navbar-nav .navbar-menu {
         background-color: #3742fa;
         position: fixed;
         top: 55px;
@@ -3400,57 +3399,73 @@ ol {
         transition: height 250ms, .5s ease-in-out;
     }
 
-    #navbar #menu.active {
+    #navbar-nav .navbar-menu.active {
         /* top: 40px; */
         opacity: 1;
         pointer-events: initial;
         height: 290px;
     }
 
-    #navbar #menu li {
+    #navbar-nav .navbar-menu li {
         display: flex;
         padding-left: 5%;
         padding-right: 5%;
+        margin: 7px;
         text-align: center;
         flex-direction: column;
     }
 
-    #navbar #menu li a {
+    #navbar-nav .navbar-menu li a {
         border-radius: 5px;
         padding: 10px;
+        margin-bottom: 0;
     }
 
-    #navbar #menu li a:after {
+    #navbar-nav .navbar-menu li a:after {
         display: none;
     }
 
-    #navbar #menu li a:hover {
+    #navbar-nav .navbar-menu li a:hover, #navbar-nav .navbar-menu li a.active {
         color: #fff;
         font-weight: 100;
         background-color: #ffa502;
         transform: scale(1.05);
     }
 
-    #navbar #menu li a.active {
+    #navbar-nav .navbar-menu li a.active {
         transform: scale(1);
     }
 }
 
 @media (max-width:455px) {
-    #navbar img {
+    /* #header-navbar {
+        line-height: 40px;
+    } */
+
+    #navbar-nav .navbar-logo img {
         width: 150px;
     }
 }
 @media (max-width:355px) {
-    header {
-        line-height: 40px;
+    #header-navbar {
+        line-height: 34px;
     }
 
-    #navbar img {
+    #navbar-nav .navbar-logo img {
         width: 100px;
     }
 
-    #navbar .login-register a {
-        padding: 3px;
+    #navbar-nav .navbar-menu li {
+        margin: 12px;
     }
+
+    #navbar-nav .navbar-menu li a {
+        padding: 0px;
+    }
+
+    #navbar-nav .navbar-login-register a {
+        padding: 2px;
+    }
+
 }
+

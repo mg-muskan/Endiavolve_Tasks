@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed';
+}
+
+.landing-home-contact {
+    text-align: center;
+}
+
+.landing-home-feedback-form {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #000;
+}
+
+.landing-home-feedback-form .form-control,
+.landing-home-feedback-form .form-select {
+    /* border-color: #000; */
+    border-radius: 0;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 16px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.landing-home-feedback-form textarea {
+    height: 100px;
+}
+
+.landing-home-feedback-form .form-control,
+.landing-home-feedback-form .form-select {
+    border-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #414;
+}
+
+.landing-home-feedback-submit {
+    text-align: start;
+}
+
+.landing-home-feedback-submit .btn {
+    color: #fff;
+    border-radius: 0;
+    width: 100px;
+    background-color: #3742fa;
+    transition: width .5s ease-in-out;
+}
+
+.landing-home-feedback-submit .btn:hover {
+    width: 100%;
+    background-color: #ffa502;
+    transition-timing-function: linear;
+}

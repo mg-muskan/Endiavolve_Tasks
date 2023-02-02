@@ -16,8 +16,8 @@
     <!-- Font-Awesome -->
     <script src="https://kit.fontawesome.com/9d24440128.js" crossorigin="anonymous"></script>
     <!-- CSS -->
-    <link rel="stylesheet" href="feedback-form.css">
-    <link rel="stylesheet" href="feedback-form-resp.css">
+    <link rel="stylesheet" href="css/feedback-form.css">
+    <link rel="stylesheet" href="css/feedback-form-resp.css">
     <!-- <link rel="stylesheet" href="../indexcss.css"> -->
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
@@ -26,8 +26,8 @@
     
     <section>
         <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
+            <div class="row justify-content-center landing-home-contact">
+                <div class="col-md-6 landing-home-contact-left-side">
                     <div class="landing-feed-heading">
                         <h2>EndiaVolve</h2>
                     </div>
@@ -41,25 +41,25 @@
                     </div>
 
                     <div class="landing-home-mail-heading">
-                        <label for="email">Email :-</label> <a href="">info@endiavolve.com</a><b>|</b><a href="">contact@endiavolve.com</a>
+                        <label for="email">Email :-</label> <a href="mailto:info@endiavolve.com">info@endiavolve.com</a><b>|</b><a href="mailto:contact@endiavolve.com">contact@endiavolve.com</a>
                     </div>
                     <div class="landing-home-feedback-icons">
                         <div class="landing-home-feedback-icon">
                             <i class="fa-regular fa-envelope" id="linkin"></i><label for="linkin">Linkedin</label>
                         </div>
                         <div class="landing-home-feedback-icon">
-                            <i class="fa-brands fa-youtube"></i><label for="linkin">youtube</label>
+                            <i class="fa-brands fa-youtube"></i><label for="linkin">Youtube</label>
                         </div>
                         <div class="landing-home-feedback-icon">
-                            <i class="fa-brands fa-twitter"></i><label for="linkin">twitter</label>
+                            <i class="fa-brands fa-twitter"></i><label for="linkin">Twitter</label>
                         </div>
                         
                     </div>
 
                 </div>
                 <div class="col-md-6">
-                    <div class="landing-home-contact">
-                    <div class="landing-home-contant-head">
+                    <div class="landing-home-contact-right-side">
+                    <div class="landing-home-contact-head">
                         <h2>Contact Us</h2>
                     </div>
                     <div class="landing-home-contact-form">
@@ -76,7 +76,7 @@
                                 <option value="2">BE</option>
                                 <option value="3">Diploma</option>
                             </select>
-
+                            
                             <select name="fyear" id="year" aria-placeholder="Year" class="form-select" required
                             oninvalid="this.setCustomValidity('Please select your Semester')" oninput="this.setCustomValidity('')">
                                 <option value="" selected disabled>Year / Semester</option>
@@ -100,8 +100,12 @@
 
                             <input type="email" name="mail" placeholder="Email Address" class="form-control" id="email" required>
 
-                            <textarea rows="5" name="mess" placeholder="Message...." class="form-control" id="message" required
-                            oninvalid="this.setCustomValidity('Please give your feedback.')" oninput="this.setCustomValidity('')"></textarea>
+                            <div class="landing-home-textarea-box">
+                                <textarea rows="5" name="mess" placeholder="Message...." class="form-control" id="message" required
+                                maxlength="500" oninvalid="this.setCustomValidity('Please give your feedback.')" oninput="this.setCustomValidity('')
+                                if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);"></textarea>
+                                <span id="message-count">500</span>
+                            </div>
 
                             <div class="landing-home-feedback-submit" id="send-btn">
                                 <input class="btn" type="submit" name="" value="Submit">
@@ -115,6 +119,23 @@
             </div>
         </div>
     </section>
+
+    <script>
+        const textarea = document.getElementById('message');
+        const counter = document.getElementById('message-count');
+        textarea.addEventListener('input', function() {
+            var len = 500 - textarea.value.length;
+            counter.innerHTML = len;
+            if(len == 0) {
+                textarea.style.bordercolor = "red";
+                counter.style.color = "red";
+            }
+            else {
+                textarea.style.bordercolor = "none";
+                counter.style.color = "#666";
+            }
+        })
+    </script>
     
 </body>
 </html>

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Condensed';
+}
+.landing-home-contact {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.landing-home-contact-left-side h2:after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin-bottom: 20px;
+    background-color: #3742fa;
+}
+
+.landing-home-contact-right-side h2:after {
+    content: '';
+    width: 150px;
+    height: 3px;
+    display: block;
+    margin: 0 auto 20px auto;
+    background-color: #3742fa;
+}
+
+.landing-home-contact-left-side {
+    margin-top: 10%
+}
+
+.landing-home-feedback-icons {
+    display: flex;
+}
+
+.landing-home-feedback-icon {
+    padding: 10px;
+    padding-left: 0;
+}
+
+.landing-home-feedback-icon i {
+    margin-right: 5px;
+}
+
+.landing-home-contact-right-side {
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.landing-home-contact-head {
+    font-weight: 500;
+}
+
+.landing-home-feedback-form {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border: 1px solid #000;
+}
+
+.landing-home-feedback-form .form-control,
+.landing-home-feedback-form .form-select {
+    border-radius: 0;
+    border-color: #fff;
+    padding: 10px;
+    border-bottom: 1px solid #414;
+    font-size: 17px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.landing-home-textarea-box {
+    display: flex;
+    position: relative;
+}
+
+.landing-home-textarea-box textarea {
+    height: 110px;
+    resize: none;
+    overflow: hidden;
+}
+
+.landing-home-textarea-box span {
+    color: #666;
+    position: absolute;
+    right: 10px;
+    bottom: 25px;
+}
+
+.landing-home-feedback-form input::-webkit-outer-spin-button,
+.landing-home-feedback-form input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* Firefox */
+.landing-home-feedback-form input[type=number] {
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.landing-home-feedback-submit {
+    text-align: end;
+}
+
+.landing-home-feedback-submit .btn {
+    color: #fff;
+    border-radius: 0;
+    width: 100px;
+    background-color: #3742fa;
+    transition: width .5s ease-in-out;
+}
+
+.landing-home-feedback-submit .btn:hover {
+    /* width: 100%; */
+    background-color: #ffa502;
+    /* transition-timing-function: linear; */
+}

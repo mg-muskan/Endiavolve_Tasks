@@ -1,0 +1,81 @@
+@media (max-width: 1100px) {
+    .userpanel-navbar-logo > img {
+        width: 150px;
+    }
+
+    .userpanel-navbar-nav {
+        font-size: 0.8rem;
+    }
+
+    .userpanel-navbar-right-container {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 880px) {
+
+    .userpanel-navbar-nav {
+        /* display: none; */
+        visibility: hidden;
+        top: 45px;
+        width: 100%;
+        padding: 10px;
+        background: #3742fa;
+        height: 0px;
+        position: absolute;
+        transition: height 250ms, .5s ease-in-out;
+    }
+
+    .userpanel-navbar-nav.active {
+        /* display: flex; */
+        visibility: visible;
+        align-items: center;
+        flex-direction: column;
+        height: 500px;
+        top: 45px;
+        /* height: 250px; */
+    }
+
+    .userpanel-nav-links {
+        /* position: relative; */
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .userpanel-nav-links:hover {
+        color: #fff;
+        font-weight: 100;
+        border-radius: 5px;
+        background-color: #ffa502;
+    }
+
+    .userpanel-nav-links > a {
+        display: flex;
+        width: 100%;
+        padding: 5px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .userpanel-nav-links > a:hover {
+        color: #fff;
+    }
+
+    .userpanel-nav-links > a:after {
+        display: none;
+    }
+
+    .userpanel-bars {
+        display: block;
+    }
+
+    .userpanel-navbar-mark {
+        display: none;
+    }
+}
+
+@media (max-width: 303px) {
+    .userpanel-navbar-logo {
+        width: 0.6em;
+    }
+}

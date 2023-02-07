@@ -1,0 +1,337 @@
+/*================================================================================================================
+                                            PARALLAX (GENERIC)
+=================================================================================================================*/
+
+
+/* Large Devices (Desktops & Laptops) */
+
+@media (min-width: 1200px) {
+    /* Every thing is fine */
+    .section-imp {
+        min-height: 90vh;
+    }
+}
+
+
+/* Medium Devices (Landscape Tablets & Medium Desktops) */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    /* Mobile menu */
+    .navbar {
+        background: #3742fa;
+        padding: 0;
+    }
+    .navbar-nav {
+        float: left;
+    }
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+    .section-imp {
+        min-height: 90vh;
+    }
+}
+
+
+/* Small Devices (Portrait Tablets & Small Desktops) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Mobile menu */
+    /* HOME */
+    .logo {
+        max-height: 7vh;
+        margin-left: 40px;
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+    .navbar-brand {
+        margin-left: 50px !important;
+        margin-bottom: 10px;
+    }
+    .navbar {
+        background: #3742fa;
+        padding: 0;
+    }
+    /* .navbar-nav {
+        float: left !important;
+    } */
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+
+    .user-panel-nav-toggle{
+        background: #ffa502;
+        border: 1px solid #fff;
+        border-radius: 0;
+        margin: 8px;
+        color: #fff;
+        padding: 7px 15px;
+    }
+    .user-panel-nav-toggle i{
+        color: #fff;
+        font-size: xx-large;
+    }
+
+    .user-panel-navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .user-panel-search-box{
+        margin-bottom: 30px;
+    }
+
+    /* About - Remove Diagonal Border */
+    #about-bg-diagonal {
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box {
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+    }
+    /* Stats */
+    .stats-item {
+        padding: 20px 0;
+    }
+    /* footer */
+    #footer-copyrights {
+        text-align: center;
+    }
+    .user-panel-footer-menu{
+        display: none;
+    }
+}
+
+
+/* Extra Small Devices (Landscape Phones & Portrail Tablets) */
+
+@media (max-width: 767px) {
+    /* HOME */
+    .logo {
+        max-height: 5vh;
+        margin-left: 50%;
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+    .navbar-brand {
+        margin-left: 50px !important;
+    }
+    .search {
+        background: #fff;
+        margin-bottom: 10px;
+        /* border-radius: 5px; */
+    }
+    .search a {
+        color: #fff;
+        background: rgba(0, 0, 0, 0.5);
+    }
+    .user-panel-nav-toggle{
+        background: #ffa502;
+        border: 1px solid #fff;
+        border-radius: 0;
+        margin: 8px;
+        color: #fff;
+        padding: 7px 15px;
+    }
+    .user-panel-nav-toggle i{
+        color: #fff;
+        font-size: xx-large;
+    }
+
+    .user-panel-navbar-brand{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .user-panel-navbar-brand img{
+        background: #fff;
+        padding: 3px;
+    }
+    .user-panel-search-box{
+        margin-bottom: 30px;
+    }
+
+
+
+
+    /* Mobile menu */
+    .navbar {
+        background: #3742fa;
+        padding: 0;
+    }
+    /* .navbar-nav {
+        float: left !important;
+    } */
+    .vesco-nav-wrapper {
+        padding: 0;
+    }
+    /* HOME */
+    #home-heading h3 {
+        font-size: 24px;
+    }
+    /* BUTTON */
+    .btn-general {
+        padding: 6px 22px 6px 22px;
+        font-size: 14px;
+    }
+    /* About - Remove Diagonal Border */
+    #about-bg-diagonal {
+        border-left: 0;
+        border-right: 0;
+        width: 100%;
+        height: 350px;
+    }
+    #about-content-box {
+        width: 100%;
+        height: 100%;
+        padding: 100px 0;
+    }
+
+    .bg-parallax {
+        display: none;
+    }
+    /* WORk */
+    .img-wrapper img {
+        min-width: 100%;
+    }
+    /* Testimonials */
+    .testimonials blockquote {
+        padding: 6px 50px;
+    }
+    .testimonials blockquote:before {
+        left: 10px;
+    }
+    .testimonials blockquote:after {
+        right: 10px;
+    }
+    .testimonials blockquote p {
+        font-size: 13px;
+    }
+    /* Stats */
+    .stats-item {
+        padding: 20px 0;
+    }
+    /* footer */
+    #footer-copyrights {
+        text-align: center;
+    }
+    #row-footer {
+        display: block;
+    }
+    #col-footer {
+        display: inline;
+    }
+    .professor-div-form {
+        display: none;
+    }
+    .user-panel-footer-menu{
+        display: none;
+    }
+    /* signup panel */
+    #userPanel-signin {
+        height: max-content;
+    }
+    .login-panel-radio-btn label img {
+        display: none;
+    }
+    .login-panel-radio-btn label img:hover {
+        color: #000;
+    }
+    .signin-panel-auto-text {
+        font-size: 16px;
+    }
+    .login-panel-radio-label {
+        padding: 5px 15px;
+        margin-bottom: 0px;
+    }
+    .loginpanel-icon-box .linkedin {
+        display: none;
+    }
+    .signup-penel-content-info:nth-child(2n) {
+        justify-content: space-between;
+    }
+    .signup-panel-input-form-box {
+        width: 100%;
+        margin-bottom: 12px;
+    }
+    /* signup panel */
+    #user-signup-form-sec {
+        height: max-content;
+        padding: 3px;
+    }
+    .signup-panel-left-box {
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Extra Small Devices (Smaller devices) */
+
+@media (max-width: 480px) {
+    /* HOME */
+    .logo {
+        max-height: 5vh;
+        padding: 3px;
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+    /* CAREER PAGE FORM */
+    .professor-color-content {
+        text-align: center;
+        font-size: 10px;
+    }
+}
+
+
+/* Extra Small Devices (Smaller devices) */
+
+@media (max-width: 320px) {
+    /* HOME */
+    .logo {
+        max-height: 5vh;
+        margin-top: -10px;
+        margin-left: -40px;
+    }
+    /* SERVICES */
+    .service-item-icon i {
+        width: 50px;
+        height: 50px;
+        padding: 7px;
+    }
+    .service-item-title h3 {
+        font-size: 17px;
+    }
+    /* Abour */
+    #about-content-box {
+        margin-top: 40px;
+    }
+    /* Testimonials */
+    .testimonials img {
+        max-width: 80px;
+    }
+    .testimonials blockquote {
+        padding: 6px 30px;
+    }
+    .testimonials blockquote:before {
+        left: 0px;
+    }
+    .testimonials blockquote:after {
+        right: 3px;
+    }
+    .testimonials blockquote p {
+        font-size: 13px;
+    }
+    /* CAREER PAGE FORM */
+    .professor-color-content {
+        text-align: center;
+        font-size: 10px;
+    }
+}

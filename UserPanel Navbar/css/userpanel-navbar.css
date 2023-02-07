@@ -51,6 +51,7 @@ body {
 
 .userpanel-navbar-right-container {
     display: inline-flex;
+    align-items: center;
     margin-right: 5px;
 }
 
@@ -99,12 +100,28 @@ body {
     display : none;
 }
 
+.userpanel-navbar-video > i,
+.userpanel-navbar-mark,
+.userpanel-navbar-notification > i,
+.userpanel-navbar-img-profile {
+    font-size: 24px;
+}
+
+.userpanel-navbar-img-profile {
+    width: 30px;
+    height: 30px;
+    margin-left: -5px;
+    border-radius: 50%;
+}
+
 .userpanel-navbar-right-dropdown {
     visibility: hidden;
     position: absolute;
     top: 100%;
-    width: 210px;
+    width: 310px;
+    height: fit-content;
     right: 0px;
+    padding: 25px;
     z-index: 1;
     transform: translateY(0);
     border: 1px solid #c7d8e2;
@@ -113,30 +130,52 @@ body {
     box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.125);
 }
 
+.userpanel-navbar-video .userpanel-navbar-right-droplink {
+    padding: 14px;
+}
+
 .userpanel-navbar-right-droplink {
-    padding: 12px;
+    padding: 18px;
     list-style: none;
 }
 
 .userpanel-navbar-right-droplink > a {
-    display: flex;
     color: rgb(59, 59, 59);
     text-decoration: none;
+}
+
+.userpanel-navbar-right-droplink > a > img,
+.userpanel-navbar-right-droplink > a > i {
+    float: left;
+    border-radius: 50%;
+    font-size: 24px;
+    margin-right: 13px;
+}
+
+.userpanel-navbar-right-droplink > a > img {
+    width: 55px;
+    height: 55px;
+    margin-left: -5px;
+    border-radius: 50%;
 }
 
 .userpanel-navbar-right-profile {
     margin-left: 10px;
 }
 
+.userpanel-navbar-right-small {
+    max-width: 125px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .userpanel-navbar-right {
     display: flex;
     margin-left: 8px;
+    font-size: 14px;
+    align-items: center;
     justify-content: space-between;
-}
-
-.userpanel-navbar-right > i {
-    float: inline-end;
-    align-self: flex-end;
 }
 
 .userpanel-navbar-right-droplink:hover {
@@ -147,13 +186,9 @@ body {
     color: #fff;
 }
 
-.userpanel-navbar-img-profile {
-    width: 30px;
-    height: 30px;
-}
-
 .userpanel-navbar-right-profile {
     display: block;
+    font-size: 14px;
 }
 
 .userpanel-navbar-right-div:focus > .userpanel-navbar-right-dropdown,
@@ -182,7 +217,7 @@ body {
     width: 22px;
     position: absolute;
     z-index: 99;
-    top: 5px;
+    top: -11px;
     right: 7px;
     transition: all 0.3s;
     cursor: pointer; 

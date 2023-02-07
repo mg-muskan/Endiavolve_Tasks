@@ -12,7 +12,7 @@
     }
 }
 
-@media (max-width: 880px) {
+@media (max-width: 920px) {
 
     .userpanel-navbar-nav {
         /* display: none; */
@@ -75,7 +75,18 @@
 }
 
 @media (max-width: 303px) {
-    .userpanel-navbar-logo {
-        width: 0.6em;
+    .userpanel-navbar-logo > img {
+        width: 100px;
+    }
+
+    .userpanel-navbar-video > .userpanel-navbar-right-dropdown {
+        left: -60px;
+        right: 15px;
+        width: 120px;
+    }
+
+    .userpanel-navbar-right-dropdown {
+        padding: 0;
+        width: 210px;
     }
 }
